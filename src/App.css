@@ -1,38 +1,169 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  margin: 0;
+  font-size: 75px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.about {
+  background-color: #f1f1f1;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.projects {
+  background-color: #f9f9f9;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 100;
+}
+
+.projects li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.projects li:last-child {
+  border-bottom: none;
+}
+
+.projects h3 {
+  margin-top: 0;
+}
+
+.projects p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.contact {
+  background-color: #f1f1f1;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #666;
+}
+
+.typing-animation {
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink .5s step-end infinite;
+  white-space: nowrap;
+  font-size: 4em;
+  border-right: 4px solid white;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation-iteration-count: 1;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.section {
+  margin-top: 500px;
 }
